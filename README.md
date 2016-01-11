@@ -8,7 +8,7 @@ When [percentage] is unused, a percentage of 100 is used and the script essentia
 2. Remove the executable from within the original IPA by de-compressing it, note the size of the executable in the Payload-folder [B], removing the executable inside the Payload-folder and re-compressing the folder. Note the size of compressed assets folder [C].
 3. [percentage] = (A - C) / B * 100 
 
-*Note, no decimal percentages supported, please round the final percentage.*
+*Note, no decimal percentages supported, please round the final percentage. Instead of calculating the percentage one can also approach the percentage by trial-and-error using the percentage of similar projects.*
 
 To give a ballpark estimate on the uncompressable percentage; a Unity product I frequently calculated had a percentage of ~92.
 Although a good percentage here can get you close to the actual post-processed IPA size, it is no guarantee Apple doesn't change their DRM policy and this percentage changes. A change in your source code can also influence the uncompressable percentage. **If you need to be sure, assume the worst (100% uncompressability)!**
